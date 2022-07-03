@@ -9,8 +9,6 @@ def return_biggest_sum(numbers, ranges):
     ends = {}
     sums_ = {}
 
-    ranges.sort()
-
     get_name = generate_name()
     for begin, end in ranges:
         if begins.get(begin) is None:
@@ -54,6 +52,4 @@ if __name__ == '__main__':
     A = [1, -2, 3, 4, -5, -4, 3, 2, 1]
     ranges = [(1, 3), (0, 4), (6, 8)]
 
-    x = return_biggest_sum(A, ranges)
-    print(x)
-    result = 6
+    print(return_biggest_sum(A, ranges))  # must be 6
